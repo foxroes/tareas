@@ -1,6 +1,11 @@
-const Button = ({color, texto}) => {
+const Button = ({ color, texto }) => {
+
+  const onClick = () => {
+    console.log('Hiciste click') 
+  }
+
   return (
-    <button style={{background: color}} className='btn'>{texto}</button>
+    <button onClick={onClick} style={{ backgroundColor: color }} className='btn'>{texto}</button>
   )
 }
 
